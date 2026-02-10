@@ -19,6 +19,12 @@ export default class {
 		this.jwt = jwt
 	}
 
+	/**
+	 * @param query_string Any PostgREST-style SQL query.
+	 * @param query_body Values for INSERT/UPDATE statements. (Defaults to null.)
+	 * @param query_operation Determines CRUD method. (Only used if `query_body` is not null. Defaults to "INSERT".)
+	 * @returns An array of JSON objects representing queried PostgreSQL records.
+	 */
 	async query(
 		query_string = '',
 		query_body = null,
