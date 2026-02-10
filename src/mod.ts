@@ -1,4 +1,9 @@
 /**
+ * A plug-and-play PostgREST ESM module.
+ * @module
+ */
+
+/**
  * @param pgrst_url The PostgREST server URL. (Defaults to "localhost:3000".)
  * @param schema A comma-separated string of PostgreSQL schemas to connect to. (Defaults to "public".)
  * @param jwt Specify client JWT to use for authentication. (Defaults to a blank string.)
